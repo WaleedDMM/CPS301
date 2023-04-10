@@ -1,0 +1,57 @@
++----------------+
+           |     Book       |
+           +----------------+
+           | - bookId: int  |
+           | - bookTitle: String|
+           | - authorName: String|
+           | - publicationYear: int|
+           +----------------+
+           | + compareTo(): int|
+           +----------------+
+
+                 ^
+                 |
+                 |
+
+           +----------------+
+           |     Member     |
+           +----------------+
+           | - memberId: int|
+           | - memberName: String|
+           | - address: String|
+           +----------------+
+           | + Serializable|
+           +----------------+
+
+                 ^
+                 |
+                 |
+
+           +----------------+
+           |     Library    |
+           +----------------+
+           | - books: Book[]|
+           | - members: Member[]|
+           | - borrowings: Borrowing[]|
+           +----------------+
+           | + addBook(Book book): void|
+           | + addMember(Member member): void|
+           | + registerBorrowing(Borrowing borrowing): void|
+           | + registerReturning(Borrowing borrowing): void|
+           | + searchBooks(String bookTitle): Book[]|
+           | + searchMembers(String memberName): Member[]|
+           +----------------+
+
+                 ^
+                 |
+                 |
+
+           +----------------+
+           |    Borrowing   |
+           +----------------+
+           | - book: Book   |
+           | - member: Member|
+           | - borrowedDate: Date|
+           +----------------+
+           | + Serializable|
+           +----------------+
