@@ -1,0 +1,35 @@
+import java.io.*;
+import java.util.*;
+
+// Book class implements the Comparable interface
+class Book implements Comparable<Book>, Serializable {
+    private int bookId;
+    private String bookTitle;
+    private String authorName;
+    private int publicationYear;
+    
+    public Book(int id, String title, String author, int year) {
+        bookId = id;
+        bookTitle = title;
+        authorName = author;
+        publicationYear = year;
+    }
+    
+    // Getter methods for the book attributes
+    public int getBookId() {
+        return bookId;
+    }
+    
+    public String getBookTitle() {
+        return bookTitle;
+    }
+    
+    public String getAuthorName() {
+        return authorName;
+    }
+    
+    public int getPublicationYear() {
+        return publicationYear;
+    }
+    
+    // Override the compareTo method to compare books based on
